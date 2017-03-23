@@ -1,0 +1,108 @@
+//
+//  XiaoHaiTun.pch
+//  XiaoHaiTun
+//
+//  Created by 唐天成 on 16/8/27.
+//  Copyright © 2016年 唐天成. All rights reserved.
+//
+
+#ifndef XiaoHaiTun_pch
+#define XiaoHaiTun_pch
+
+//添加头文件
+#import "TCConst.h"
+#import "UIView+FrameExpand.h"
+#import "MJRefresh.h"
+#import <Masonry/Masonry.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+//#import <JZNavigationExtension.h>
+#import "HFNetWork.h"
+//#import "UIViewController+Alert.h"
+#import "Util.h"
+#import "UIView+XPNotNetWork.h"
+
+
+//屏幕宽高
+#define SCREEN_WIDTH         ([UIScreen mainScreen].bounds).size.width
+#define SCREEN_HEIGHT        ([UIScreen mainScreen].bounds).size.height
+
+
+// iOS 系统版本
+#define IOS_VERSION       [[[UIDevice currentDevice] systemVersion] floatValue]
+
+//几种屏幕的尺寸
+#define KDevice_IS_iPhone4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define KDevice_IS_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define KDevice_IS_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define KDevice_IS_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//屏幕比例
+//#define KWIDTH_6PLUS_SCALE        ([UIScreen mainScreen].bounds.size.width/414.0f)
+//#define KHEIGHT_6PLUS_SCALE       ([UIScreen mainScreen].bounds.size.height/736.0f)
+#define KWIDTH_IPHONE6_SCALE      ([UIScreen mainScreen].bounds.size.width/375.0f)
+#define KHEIGHT_IPHONE6_SCALE     ([UIScreen mainScreen].bounds.size.height/667.0f)
+//#define KWIDTH_IPHONE5_SCALE      ([UIScreen mainScreen].bounds.size.width/320.0f)
+//#define KHEIGHT_IPHONE5_SCALE     ([UIScreen mainScreen].bounds.size.height/568.0f)
+
+//NavBar高度
+#define NAVIGATION_HEIGHT_44  44
+
+//NavBar高度 + statusBar高度
+#define NAVIGATION_HEIGHT_64  64
+
+//TabBar高度
+#define TABAR_HEIGHT_49       49
+
+//常用cell高度
+#define CELLS_HEIGHT          44
+
+//父子控制器titleHead高度
+#define PAGER_HEAD_HEIGHT     40
+
+//本项目最常用颜色
+#define NORMAL_COLOR         RGBA(249, 52, 72, 1)
+
+
+//typedef NS_ENUM(NSInteger, JJGoodsWaitType) {
+//    JJGoodsWaitPay = 0,     //等待付款
+//    JJGoodsWaitSend = 1,    //等待发货
+//    JJGoodsWaitAccept = 2,  //等待收货
+//    JJGoodsWaitCancle = 3,  //取消
+//    JJGoodsWaitAlreadyAccept = 4, //已收货
+//};
+
+
+//RGB 色值 以及 alpha值
+#define RGBA(r, g, b,a)     [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define RGB(r, g, b)        [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define RandomColor RGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+// RGB 颜色转换（16进制->10进制） 例如UIColorFromRGB(0x000000);
+#define RGB_VALUE(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+//重写Debug模式下打印日
+#ifdef DEBUG
+//#define DebugLog(...) NSLog(__VA_ARGS__)
+#define DebugLog(format, ...) printf("\n[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#define DebugMethod() NSLog(@"%s", __func__)
+#else
+#define DebugLog(...)
+#define DebugMethod()
+#endif
+
+
+//AppDelegate
+#define SHARE_APP ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+//获取当前的类
+#define CURRENT_ClASS  NSStringFromClass([self class]
+
+//弱引用
+#define weakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;
+
+#endif /* XiaoHaiTun_pch */

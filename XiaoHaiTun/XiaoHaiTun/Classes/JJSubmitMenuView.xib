@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JJSubmitMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SP-cm-s1q">
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.20392156862745098" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="提交订单">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bip-ef-FHK">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="r0q-PP-IUB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMV-C2-7OR">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.97647058823529409" green="0.20392156862745098" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0SP-cm-s1q" secondAttribute="trailing" id="0Gq-u3-EiX"/>
+                <constraint firstAttribute="bottom" secondItem="0SP-cm-s1q" secondAttribute="bottom" id="7gJ-Ow-wst"/>
+                <constraint firstAttribute="bottom" secondItem="rMV-C2-7OR" secondAttribute="bottom" id="FEr-KH-fKC"/>
+                <constraint firstItem="0SP-cm-s1q" firstAttribute="leading" secondItem="rMV-C2-7OR" secondAttribute="trailing" id="Foi-qh-gY9"/>
+                <constraint firstItem="0SP-cm-s1q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RKd-aJ-5iv"/>
+                <constraint firstItem="0SP-cm-s1q" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.32" id="Yne-yc-CIZ"/>
+                <constraint firstAttribute="bottom" secondItem="Bip-ef-FHK" secondAttribute="bottom" id="bN4-bd-tko"/>
+                <constraint firstItem="rMV-C2-7OR" firstAttribute="leading" secondItem="Bip-ef-FHK" secondAttribute="trailing" id="g3e-WK-7j9"/>
+                <constraint firstItem="Bip-ef-FHK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lkq-d4-e6H"/>
+                <constraint firstItem="Bip-ef-FHK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ojB-PB-iuu"/>
+                <constraint firstItem="rMV-C2-7OR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yXV-pA-dQs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allMoneyLabel" destination="rMV-C2-7OR" id="XZO-VP-mC4"/>
+                <outlet property="submitBtn" destination="0SP-cm-s1q" id="nfl-4l-lkr"/>
+            </connections>
+            <point key="canvasLocation" x="210.5" y="233.5"/>
+        </view>
+    </objects>
+</document>

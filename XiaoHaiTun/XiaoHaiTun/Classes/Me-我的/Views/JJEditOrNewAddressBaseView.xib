@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JJEditOrNewAddressBaseView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLX-94-wyh">
+                    <rect key="frame" x="14" y="0.0" width="64" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NOe-le-CVZ">
+                    <rect key="frame" x="78" y="0.0" width="297" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PH-9a-Rge">
+                    <rect key="frame" x="20" y="50" width="355" height="2"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Ibg-eh-hdm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QLX-94-wyh" secondAttribute="bottom" id="6Jv-dg-zK6"/>
+                <constraint firstItem="QLX-94-wyh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Azt-0r-rhG"/>
+                <constraint firstAttribute="bottom" secondItem="NOe-le-CVZ" secondAttribute="bottom" id="EoM-vy-edl"/>
+                <constraint firstItem="QLX-94-wyh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.17" id="F7T-UZ-ioh"/>
+                <constraint firstAttribute="trailing" secondItem="1PH-9a-Rge" secondAttribute="trailing" id="HVZ-oy-5Dh"/>
+                <constraint firstItem="1PH-9a-Rge" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="JMY-wY-h0x"/>
+                <constraint firstItem="QLX-94-wyh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="Nm8-0c-WqJ"/>
+                <constraint firstItem="NOe-le-CVZ" firstAttribute="leading" secondItem="QLX-94-wyh" secondAttribute="trailing" id="eAL-Ez-G2p"/>
+                <constraint firstAttribute="bottom" secondItem="1PH-9a-Rge" secondAttribute="bottom" id="l40-kS-iB4"/>
+                <constraint firstAttribute="trailing" secondItem="NOe-le-CVZ" secondAttribute="trailing" id="m2z-Qh-E8c"/>
+                <constraint firstItem="NOe-le-CVZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mbK-H9-Cym"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="baseLabel" destination="QLX-94-wyh" id="vLr-vf-AXB"/>
+                <outlet property="textField" destination="NOe-le-CVZ" id="Kqn-Qj-lUx"/>
+            </connections>
+            <point key="canvasLocation" x="257.5" y="235"/>
+        </view>
+    </objects>
+</document>

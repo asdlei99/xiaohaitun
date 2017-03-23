@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JJShopCarCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="图层 3" translatesAutoresizingMaskIntoConstraints="NO" id="ayg-z4-neb">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="YtY-hz-7r9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苏菲的世界放大或敬爱放很大空间发" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6k-s5-rCV">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1l-fZ-6Ft">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="B7f-Br-qsf"/>
+                        </constraints>
+                        <state key="normal" image="shopCar_Normal"/>
+                        <state key="selected" image="shopCar_Select"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmR-wL-Fcs">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.97647058823529409" green="0.20392156862745098" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebc-nN-1kD">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="Rb5-lD-vJh"/>
+                            <constraint firstAttribute="height" constant="28" id="bjo-1C-YAQ"/>
+                        </constraints>
+                        <state key="normal" image="shopCar_product_detail_add_normal"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGG-Qy-bvh">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="6xD-mH-32K"/>
+                            <constraint firstAttribute="width" constant="28" id="kNR-jV-WPr"/>
+                        </constraints>
+                        <state key="normal" image="shopCar_product_detail_sub_normal"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-WT-HQX">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="cjX-K3-WNH"/>
+                            <constraint firstAttribute="width" constant="38" id="l7Q-Ty-27S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-86-VDK">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlS-nL-upg">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="PtS-I5-3Gv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="a6k-s5-rCV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="00H-lx-EH9"/>
+                    <constraint firstAttribute="bottom" secondItem="d1l-fZ-6Ft" secondAttribute="bottom" id="17X-Uq-9nC"/>
+                    <constraint firstItem="d1l-fZ-6Ft" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="18h-F7-DKV"/>
+                    <constraint firstItem="4hu-86-VDK" firstAttribute="leading" secondItem="ayg-z4-neb" secondAttribute="trailing" constant="10" id="3kw-Hc-8RG"/>
+                    <constraint firstAttribute="bottom" secondItem="PcT-WT-HQX" secondAttribute="bottom" constant="16" id="3wv-u9-hNa"/>
+                    <constraint firstItem="ebc-nN-1kD" firstAttribute="leading" secondItem="PcT-WT-HQX" secondAttribute="trailing" constant="-1" id="4bn-3T-M7E"/>
+                    <constraint firstItem="a6k-s5-rCV" firstAttribute="leading" secondItem="ayg-z4-neb" secondAttribute="trailing" constant="10" id="6yg-jv-MVh"/>
+                    <constraint firstItem="PcT-WT-HQX" firstAttribute="leading" secondItem="fGG-Qy-bvh" secondAttribute="trailing" constant="-1" id="7cT-se-Wdb"/>
+                    <constraint firstItem="d1l-fZ-6Ft" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8oN-0e-z4C"/>
+                    <constraint firstItem="nmR-wL-Fcs" firstAttribute="leading" secondItem="ayg-z4-neb" secondAttribute="trailing" constant="10" id="AmK-cZ-ouP"/>
+                    <constraint firstItem="ayg-z4-neb" firstAttribute="leading" secondItem="d1l-fZ-6Ft" secondAttribute="trailing" constant="10" id="DJW-eF-tSJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4hu-86-VDK" secondAttribute="trailing" constant="2" id="FLE-Ib-ZSz"/>
+                    <constraint firstItem="JlS-nL-upg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GSh-gy-3vq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="a6k-s5-rCV" secondAttribute="trailing" constant="2" id="PZR-Ke-jVM"/>
+                    <constraint firstAttribute="bottom" secondItem="fGG-Qy-bvh" secondAttribute="bottom" constant="16" id="RN0-TU-j0h"/>
+                    <constraint firstAttribute="bottom" secondItem="JlS-nL-upg" secondAttribute="bottom" id="aBc-um-GSn"/>
+                    <constraint firstAttribute="trailing" secondItem="JlS-nL-upg" secondAttribute="trailing" id="bWo-9W-LK0"/>
+                    <constraint firstAttribute="bottom" secondItem="ayg-z4-neb" secondAttribute="bottom" constant="14" id="dBI-oV-ZRc"/>
+                    <constraint firstItem="4hu-86-VDK" firstAttribute="top" secondItem="a6k-s5-rCV" secondAttribute="bottom" constant="4.5" id="eq0-OV-bsY"/>
+                    <constraint firstAttribute="bottom" secondItem="nmR-wL-Fcs" secondAttribute="bottom" constant="20" id="h4X-PB-UcG"/>
+                    <constraint firstAttribute="bottom" secondItem="ebc-nN-1kD" secondAttribute="bottom" constant="16" id="kGL-nM-hvP"/>
+                    <constraint firstAttribute="trailing" secondItem="ebc-nN-1kD" secondAttribute="trailing" constant="10" id="lqk-VJ-OH8"/>
+                    <constraint firstItem="ayg-z4-neb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="swy-Lz-JBp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AddBtn" destination="ebc-nN-1kD" id="pI8-TT-xtS"/>
+                <outlet property="chooseBtn" destination="d1l-fZ-6Ft" id="6eJ-Dc-2bG"/>
+                <outlet property="descriptLabel" destination="a6k-s5-rCV" id="w2r-6W-42M"/>
+                <outlet property="numberLabel" destination="PcT-WT-HQX" id="COF-dE-9iF"/>
+                <outlet property="pictureImageView" destination="ayg-z4-neb" id="cQv-HT-O9Z"/>
+                <outlet property="priceLabel" destination="nmR-wL-Fcs" id="E1w-Sx-2N2"/>
+                <outlet property="skuLabel" destination="4hu-86-VDK" id="VPd-uA-iSG"/>
+                <outlet property="subtractBtn" destination="fGG-Qy-bvh" id="Jqr-CH-O0A"/>
+                <outlet property="whiteLineView" destination="JlS-nL-upg" id="7k1-NZ-oHv"/>
+            </connections>
+            <point key="canvasLocation" x="167.5" y="285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shopCar_Normal" width="20" height="20"/>
+        <image name="shopCar_Select" width="20" height="20"/>
+        <image name="shopCar_product_detail_add_normal" width="29" height="28"/>
+        <image name="shopCar_product_detail_sub_normal" width="29" height="28"/>
+        <image name="图层 3" width="109" height="100"/>
+    </resources>
+</document>

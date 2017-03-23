@@ -1,0 +1,14 @@
+platform :ios, '7.1'
+inhibit_all_warnings!
+
+target ’XiaoHaiTun’ do
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'AFNetworking'
+pod 'MBProgressHUD'
+pod 'ReactiveCocoa'
+pod "MJExtension"
+pod 'LBXAlertAction'
+pod 'ZYCornerRadius', git:'https://github.com/liuzhiyi1992/ZYCornerRadius.git',tag:'0.9.1'
+
+end

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JJCashierHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="695" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bur-G6-23A">
+                    <rect key="frame" x="0.0" y="0.0" width="695" height="117"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单已提交,请在30分钟内完成支付.否者订单会自动取消" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1a-3U-4Hh">
+                            <rect key="frame" x="0.0" y="0.0" width="695" height="117"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="F1a-3U-4Hh" firstAttribute="leading" secondItem="bur-G6-23A" secondAttribute="leading" id="6hc-H3-bDW"/>
+                        <constraint firstAttribute="trailing" secondItem="F1a-3U-4Hh" secondAttribute="trailing" id="7zh-Ai-7up"/>
+                        <constraint firstItem="F1a-3U-4Hh" firstAttribute="top" secondItem="bur-G6-23A" secondAttribute="top" id="DWi-MW-Fae"/>
+                        <constraint firstAttribute="bottom" secondItem="F1a-3U-4Hh" secondAttribute="bottom" id="sVx-TX-yX8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvA-YF-EOf">
+                    <rect key="frame" x="0.0" y="117" width="695" height="144"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应付金额:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAt-XE-kqb">
+                            <rect key="frame" x="14" y="0.0" width="61" height="144"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥35345.45" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkF-gW-FGk">
+                            <rect key="frame" x="608" y="0.0" width="73" height="144"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.97647058823529409" green="0.20392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zkF-gW-FGk" firstAttribute="top" secondItem="FvA-YF-EOf" secondAttribute="top" id="2zm-Kb-IFK"/>
+                        <constraint firstAttribute="bottom" secondItem="zkF-gW-FGk" secondAttribute="bottom" id="NV8-Lk-cbk"/>
+                        <constraint firstItem="mAt-XE-kqb" firstAttribute="top" secondItem="FvA-YF-EOf" secondAttribute="top" id="XhC-nz-lUK"/>
+                        <constraint firstAttribute="trailing" secondItem="zkF-gW-FGk" secondAttribute="trailing" constant="14" id="bxY-Gg-kdy"/>
+                        <constraint firstAttribute="bottom" secondItem="mAt-XE-kqb" secondAttribute="bottom" id="chK-uc-bET"/>
+                        <constraint firstItem="mAt-XE-kqb" firstAttribute="leading" secondItem="FvA-YF-EOf" secondAttribute="leading" constant="14" id="p2o-Jz-eGY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bur-G6-23A" secondAttribute="trailing" id="0OJ-y4-b9D"/>
+                <constraint firstItem="bur-G6-23A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Iw-Bk-eQj"/>
+                <constraint firstItem="bur-G6-23A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Ve-00-40L"/>
+                <constraint firstAttribute="bottom" secondItem="FvA-YF-EOf" secondAttribute="bottom" id="Yyd-QQ-luZ"/>
+                <constraint firstItem="FvA-YF-EOf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ezd-Zx-BDk"/>
+                <constraint firstItem="FvA-YF-EOf" firstAttribute="top" secondItem="bur-G6-23A" secondAttribute="bottom" id="hTX-CX-ot0"/>
+                <constraint firstItem="bur-G6-23A" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.45" id="i5e-od-irz"/>
+                <constraint firstAttribute="trailing" secondItem="FvA-YF-EOf" secondAttribute="trailing" id="pg9-FW-9lI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="payMoneyLabel" destination="zkF-gW-FGk" id="uAu-Oh-SQW"/>
+            </connections>
+            <point key="canvasLocation" x="354.5" y="323.5"/>
+        </view>
+    </objects>
+</document>
